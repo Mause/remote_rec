@@ -1,0 +1,68 @@
+groups: []
+resources:
+- name: repository
+  type: git
+  source:
+    password: ((github-password))
+    uri: https://github.com/Mause/remote_rec
+    username: ((github-username))
+- name: release-docker-image
+  type: docker-image
+  source:
+    email: me@mause.me
+    insecure_registries:
+    - registry.novell.mause.me:32000
+    repository: ((docker-repo))
+- name: kubernetes-job
+  type: kubernetes
+  source:
+    kubeconfig: |
+        apiVersion: v1
+        clusters:
+          - cluster:
+              server: http://192.168.1.8:8080
+            name: microk8s-cluster
+        contexts:
+          - context:
+              cluster: microk8s-cluster
+              user: admin
+            name: microk8s
+        current-context: microk8s
+        kind: Config
+        preferences: {}
+        users:
+          - name: admin
+            user:
+              username: admin
+resource_types:
+- name: kubernetes
+  type: docker-image
+  source:
+    repository: zlabjp/kubernetes-resource
+    tag: latest
+jobs:
+- name: create-release-image
+  public: true
+  plan:
+  - get: repository
+  - put: release-docker-image
+    params:
+      build: repository
+      tag: repository/.git/ref
+      tag_as_latest: true
+- name: kubernetes-deploy
+  public: true
+  plan:
+  - get: repository
+  - get: release-docker-image
+    passed:
+    - create-release-image
+    trigger: true
+  - put: kubernetes-job
+    params:
+        kubectl: apply -f repository/def.yml
+        wait_until_ready: 300
+  - put: kubernetes-job
+    params:
+      kubectl: delete pods -l app=remote_rec
+      wait_until_ready: 300
