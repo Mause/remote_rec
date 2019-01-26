@@ -22,6 +22,8 @@ def get_tv():
     logging.info("finding tv")
     chromecasts = pychromecast.get_chromecasts()
 
+    logging.info('found chromecasts: %s', chromecasts)
+
     tv = next(ch for ch in chromecasts if ch.device.friendly_name == "Bedroom TV")
 
     logging.info("tv found")
