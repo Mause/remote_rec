@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pudb = "*"
+ipdb = "*"
+pdbpp = "*"
+
+[packages]
+pychromecast = "*"
+requests-toolbelt = "*"
+python-dotenv = "*"
+redis = "*"
+requests = "*"
+pytest = "*"
+plexapi = "*"
+
+[requires]
+python_version = "3.7"
