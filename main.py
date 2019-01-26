@@ -32,8 +32,6 @@ def get_tv():
 
 
 def main():
-    tv = get_tv()
-
     url = requests.get(
         "https://remote-hook.herokuapp.com/redis",
         auth=(os.environ["CONFIG_USERNAME"], os.environ["CONFIG_PASSWORD"]),
@@ -47,6 +45,8 @@ def main():
     logging.info(next(sub))  # skip connection
 
     for message in ps.listen():
+        tv = get_tv()
+
         message = json.loads(message["data"])
         logging.info(message)
 
@@ -59,5 +59,5 @@ def main():
 
 
 if __name__ == "__main__":
-    get_tv()
     main()
+
