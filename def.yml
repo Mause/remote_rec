@@ -1,0 +1,21 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: default
+  name: remote-rec
+  labels:
+    app: remote_rec
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  template:
+    metadata:
+      namespace: default
+      labels:
+        app: remote_rec
+    spec:
+      containers:
+        - name: remote-rec
+          image: registry.novell.mause.me:32000/remote_rec:latest
+          imagePullPolicy: Always
