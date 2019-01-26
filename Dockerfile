@@ -6,7 +6,8 @@ WORKDIR /app
 RUN pip install pipenv
 RUN pipenv install --system --deploy
 
-EXPOSE 5000:80
+EXPOSE 7679:7679
+EXPOSE 3702:3702
 
 CMD ["python", "main.py"]
 
