@@ -60,5 +60,7 @@ def main():
 
 
 if __name__ == "__main__":
+    with open('.git/ref') as fh:
+        print(f'version: {fh.read().strip()}')
     main()
 
