@@ -38,6 +38,7 @@ def main():
     ).json()["redis_endpoint"]
 
     redis = StrictRedis.from_url(url)
+    redis.execute_command('client setname remoterec')
 
     ps = redis.pubsub()
     ps.subscribe("watch")
