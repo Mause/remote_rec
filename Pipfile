@@ -16,6 +16,7 @@ redis = "*"
 requests = "*"
 pytest = "*"
 plexapi = "*"
+python-levenshtein = "*"
 
 [requires]
 python_version = "3.7"
