@@ -256,10 +256,10 @@
         },
         "pdbpp": {
             "hashes": [
-                "sha256:57eaea444394056c62a28d02280766b8ef3d09077dc194e25079fe49b92912c0"
+                "sha256:438bb2c885e40e9dcf649d9b598e4fe30fd1e3558c89a6ad3f447a9839a04e9f"
             ],
             "index": "pypi",
-            "version": "==0.9.5"
+            "version": "==0.9.6"
         },
         "pexpect": {
             "hashes": [
