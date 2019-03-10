@@ -5,8 +5,8 @@ verify_ssl = true
 
 [dev-packages]
 pudb = "*"
-ipdb = "*"
 pdbpp = "*"
+ipdb = "*"
 
 [packages]
 pychromecast = "*"
