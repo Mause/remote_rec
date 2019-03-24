@@ -49,7 +49,6 @@ class PlexMediaController(MediaController):
             "accessToken": self.plex._token,
         }
 
-
     def play_media(self, video: Movie) -> None:
         self.launch(lambda: self._play_media(video))
 
@@ -87,7 +86,12 @@ class PlexMediaController(MediaController):
         }
 
         self.send_message(
-            {"media": body, "type": "LOAD", "autoplay": True, "current_time": None},
+            {
+                "media": body,
+                "type": "LOAD",
+                "autoplay": True,
+                "current_time": None,
+            },
             inc_session_id=True,
         )
 

@@ -34,7 +34,9 @@ class AnimelabController(MediaController):
 
 
 def autocomplete(text: str) -> Optional[Dict]:
-    result = session.get("shows/search", params={"searchTerms": text}).json()["list"]
+    result = session.get("shows/search", params={"searchTerms": text}).json()[
+        "list"
+    ]
 
     return result[0] if result else None
 
@@ -42,7 +44,9 @@ def autocomplete(text: str) -> Optional[Dict]:
 def play_show(tv: Chromecast, text: str):
     show = autocomplete(text)
     if not show:
-        logging.info(f'could not find a show that matched "{text}" for animelab')
+        logging.info(
+            f'could not find a show that matched "{text}" for animelab'
+        )
         return
 
     logging.info(f"playing from {show['name']}")
@@ -87,7 +91,9 @@ def get_session():
 
 def get_video_for_show(show_id: str) -> str:
     first_unwatched = (
-        get_session().get(f"shows/firstunwatched/{show_id}").json()["videoList"]
+        get_session()
+        .get(f"shows/firstunwatched/{show_id}")
+        .json()["videoList"]
     )
 
     logging.info(
