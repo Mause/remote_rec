@@ -123,5 +123,5 @@ def get_video_for_show(show_id: str) -> str:
 
 
 if __name__ == "__main__":
-    pprint(get_video_for_show())
+    pprint(get_video_for_show('479'))
 
