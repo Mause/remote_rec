@@ -10,13 +10,13 @@ from dotenv import load_dotenv
 from redis import StrictRedis
 import pychromecast
 from pychromecast import Chromecast
-
-import animelab
-import plex
+from pluginbase import PluginBase
 
 logging.basicConfig(level=logging.INFO)
 
 load_dotenv()
+
+plugin_source = PluginBase('plugins').make_plugin_source(searchpath=['plugins'])
 
 
 @lru_cache()
@@ -64,17 +64,17 @@ def main():
     logging.info(next(sub))  # skip connection
 
     for message in ps.listen():
-        tv = get_tv()
+        tv = get_tv(name="Ellie's TV")
 
         message = json.loads(message["data"])
         logging.info(message)
 
-        if message["service"] == "animelab":
-            animelab.play_show(tv, message["show"])
-        elif message["service"] == "plex":
-            plex.play_show(tv, message["show"])
+        try:
+            play_show = plugin_source.load_plugin(message['service']).play_show
+        except ImportError as e:
+            raise Exception(message) from e
         else:
-            raise Exception(message)
+            play_show(tv, message['show'])
 
 
 if __name__ == "__main__":
