@@ -265,10 +265,18 @@
         },
         "pdbpp": {
             "hashes": [
-                "sha256:57eaea444394056c62a28d02280766b8ef3d09077dc194e25079fe49b92912c0"
+                "sha256:62150302a61b0c45943597258a9685eb976c4750919557724f058b4e33abb8e7"
             ],
             "index": "pypi",
-            "version": "==0.9.5"
+            "version": "==0.9.13"
+        },
+        "pexpect": {
+            "hashes": [
+                "sha256:2a8e88259839571d1251d278476f3eec5db26deb73a70be5ed5dc5435e418aba",
+                "sha256:3fbd41d4caf27fa4a377bfd16fef87271099463e6fa73e92a52f92dfee5d425b"
+            ],
+            "markers": "sys_platform != 'win32'",
+            "version": "==4.6.0"
         },
         "pexpect": {
             "hashes": [
