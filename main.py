@@ -1,13 +1,15 @@
 import os
 import json
-from functools import lru_cache
-from typing import Optional
 import logging
+from uuid import UUID
+from typing import Optional, Callable
+from functools import lru_cache
 
 import requests
 from dotenv import load_dotenv
 from redis import StrictRedis
 import pychromecast
+from pychromecast import Chromecast
 
 import animelab
 import plex
@@ -18,15 +20,31 @@ load_dotenv()
 
 
 @lru_cache()
-def get_tv():
+def get_tv(*, uuid: str = None, name: str = None) -> Chromecast:
+    assert uuid or name, "Must specify either name or uuid"
     logging.info("finding tv")
+
     chromecasts = pychromecast.get_chromecasts()
 
-    logging.info('found chromecasts: %s', chromecasts)
+    logging.info("found chromecasts: %s", chromecasts)
 
-    tv = next(ch for ch in chromecasts if ch.device.friendly_name == "Bedroom TV")
+    _uuid = UUID(uuid) if uuid else None
+    tv = next(
+        (
+            ch
+            for ch in chromecasts
+            if (ch.device.friendly_name == name or ch.device.uuid == _uuid)
+        ),
+        None,
+    )
+    if not tv:
+        message = (
+            f'did not find tv with criteria: name="{name}" or uuid="{uuid}"'
+        )
+        logging.error(message)
+        raise Exception(message)
 
-    logging.info("tv found")
+    logging.info("tv found: %s", tv)
 
     return tv
 
