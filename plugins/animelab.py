@@ -74,7 +74,7 @@ def get_expiry(play_session: str) -> datetime:
 
 def get_session():
     play_session = session.cookies.get("PLAY_SESSION")
-    if not play_session or datetime.now() > get_expiry(play_session):
+    if not play_session:  # or datetime.now() > get_expiry(play_session):
         logging.info("obtaining new token")
 
         session.post(
