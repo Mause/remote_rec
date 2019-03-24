@@ -17,6 +17,7 @@ requests = "*"
 pytest = "*"
 plexapi = "*"
 python-levenshtein = "*"
+pluginbase = "*"
 
 [requires]
 python_version = "3.7"
