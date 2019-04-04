@@ -272,10 +272,10 @@
         },
         "pdbpp": {
             "hashes": [
-                "sha256:565a4ee4b54bd73310058ce439e245230c587774813e394c902a214c3e693d24"
+                "sha256:3936ed6c145d9bebad9f532a20796d7022fc251ad6b041adc56b67839efd5173"
             ],
             "index": "pypi",
-            "version": "==0.9.14"
+            "version": "==0.9.15"
         },
         "pexpect": {
             "hashes": [
