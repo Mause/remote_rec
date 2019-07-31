@@ -176,11 +176,11 @@
         },
         "redis": {
             "hashes": [
-                "sha256:1835d67bef5590047d9cf766e9191ecbc9ab4556a41d3f7f52f60f7338a2b60b",
-                "sha256:82a982a17e7f5fc3b6d55a712e3ef35f6927fbcb27c2677bda2ab235d3425932"
+                "sha256:1f2493b72f669a096c59ca7cf7f4067b1ab58a0a3c6bef51d5d8fd384298c6a2",
+                "sha256:b851b0ef53b6d416f1dc692dc168f3d390b37995925bfe29351b3a869976598c"
             ],
             "index": "pypi",
-            "version": "==3.3.3"
+            "version": "==3.3.4"
         },
         "requests": {
             "hashes": [
