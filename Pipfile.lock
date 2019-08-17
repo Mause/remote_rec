@@ -136,11 +136,11 @@
         },
         "pychromecast": {
             "hashes": [
-                "sha256:828afb54261e6dd07031bd67428de4374eb20a9da339e9b7cb3601466339dbc5",
-                "sha256:da8a5a5a0d6c1046e818b586b247dd41f556ffa2a2e80f09cff6497c2db5879e"
+                "sha256:0bb643d9a4daf64cc8ab55ee130a9dd743d372a89f4343e4101a32b3641b10ba",
+                "sha256:8a31f3e386c84de2d8d006f7972485d07dfcc3a48898230546db54ba9c3a7270"
             ],
             "index": "pypi",
-            "version": "==3.2.2"
+            "version": "==3.2.3"
         },
         "pyparsing": {
             "hashes": [
@@ -205,10 +205,10 @@
         },
         "tqdm": {
             "hashes": [
-                "sha256:14a285392c32b6f8222ecfbcd217838f88e11630affe9006cd0e94c7eff3cb61",
-                "sha256:25d4c0ea02a305a688e7e9c2cdc8f862f989ef2a4701ab28ee963295f5b109ab"
+                "sha256:1dc82f87a8726602fa7177a091b5e8691d6523138a8f7acd08e58088f51e389f",
+                "sha256:47220a4f2aeebbc74b0ab317584264ea44c745e1fd5ff316b675cd0aff8afad8"
             ],
-            "version": "==4.32.2"
+            "version": "==4.33.0"
         },
         "urllib3": {
             "hashes": [
@@ -290,10 +290,10 @@
         },
         "jedi": {
             "hashes": [
-                "sha256:53c850f1a7d3cfcd306cc513e2450a54bdf5cacd7604b74e42dd1f0758eaaf36",
-                "sha256:e07457174ef7cb2342ff94fa56484fe41cec7ef69b0059f01d3f812379cb6f7c"
+                "sha256:786b6c3d80e2f06fd77162a07fed81b8baa22dde5d62896a790a331d6ac21a27",
+                "sha256:ba859c74fa3c966a22f2aeebe1b74ee27e2a462f56d3f5f7ca4a59af61bfe42e"
             ],
-            "version": "==0.14.1"
+            "version": "==0.15.1"
         },
         "parso": {
             "hashes": [
