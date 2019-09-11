@@ -66,11 +66,11 @@
         },
         "importlib-metadata": {
             "hashes": [
-                "sha256:23d3d873e008a513952355379d93cbcab874c58f4f034ff657c7a87422fa64e8",
-                "sha256:80d2de76188eabfbfcf27e6a37342c2827801e59c4cc14b0371c56fed43820e3"
+                "sha256:9ff1b1c5a354142de080b8a4e9803e5d0d59283c93aed808617c787d16768375",
+                "sha256:b7143592e374e50584564794fcb8aaf00a23025f9db866627f89a21491847a8d"
             ],
             "markers": "python_version < '3.8'",
-            "version": "==0.19"
+            "version": "==0.20"
         },
         "more-itertools": {
             "hashes": [
@@ -137,11 +137,11 @@
         },
         "pychromecast": {
             "hashes": [
-                "sha256:0bb643d9a4daf64cc8ab55ee130a9dd743d372a89f4343e4101a32b3641b10ba",
-                "sha256:8a31f3e386c84de2d8d006f7972485d07dfcc3a48898230546db54ba9c3a7270"
+                "sha256:249f984d98bfd36979f64eceb7778577fecd941945ae1b994e0f8c0f8d5c851c",
+                "sha256:f2efba0cb44339b2869cff6262d15d8cf3de52c04fc8efd3601f7a9e1563f50d"
             ],
             "index": "pypi",
-            "version": "==3.2.3"
+            "version": "==4.0.0"
         },
         "pyparsing": {
             "hashes": [
