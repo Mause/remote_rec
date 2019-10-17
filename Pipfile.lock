@@ -25,10 +25,10 @@
         },
         "attrs": {
             "hashes": [
-                "sha256:ec20e7a4825331c1b5ebf261d111e16fa9612c1f7a5e1f884f12bd53a664dfd2",
-                "sha256:f913492e1663d3c36f502e5e9ba6cd13cf19d7fab50aa13239e420fef95e1396"
+                "sha256:08a96c641c3a74e44eb59afb61a24f2cb9f4d7188748e76ba4bb5edfa3cb7d1c",
+                "sha256:f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72"
             ],
-            "version": "==19.2.0"
+            "version": "==19.3.0"
         },
         "casttube": {
             "hashes": [
@@ -137,11 +137,11 @@
         },
         "pychromecast": {
             "hashes": [
-                "sha256:3f622b35009ebd04cb8d2f5e948985a0f585833f8a837f27e113e97d4704ac87",
-                "sha256:d98df28f340bb14a07236846518daad7107b66581512c33da921663df61ac819"
+                "sha256:6458a1c01df6726e622e5515a67c2d6ab5bc95141063fcd6f4d2a8e33560da18",
+                "sha256:b6979f1ddce1ff8760586aa6b8828290964b38f34c01aa1380ab1740330eeee2"
             ],
             "index": "pypi",
-            "version": "==4.0.1"
+            "version": "==4.1.0"
         },
         "pyparsing": {
             "hashes": [
