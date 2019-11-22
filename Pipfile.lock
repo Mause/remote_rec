@@ -81,10 +81,10 @@
         },
         "plexapi": {
             "hashes": [
-                "sha256:d3007194594d4d347d67b4aa9337e211cab9c1f123d889f067a28e7266260be1"
+                "sha256:e89feb6966e846a5dee63f4b8600470020807b9dd9c1147a90c7269625a32ea2"
             ],
             "index": "pypi",
-            "version": "==3.2.0"
+            "version": "==3.3.0"
         },
         "pluggy": {
             "hashes": [
