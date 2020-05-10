@@ -132,11 +132,11 @@
         },
         "pychromecast": {
             "hashes": [
-                "sha256:55e6db2716eff6a36a45092a2f547cc7609d98495ad70db4ac8d90feb4964f78",
-                "sha256:e59e9f85d6af04f588a22ff2381b9bd8b1cd53a691a30e698ff4266bac1a30b6"
+                "sha256:16f90297c0b8930a223ac35e7a6188f87301d9e3db64d662be1073ebae533e6b",
+                "sha256:9dadfc91d038e30abc5c909ebdec3e6c6f9d0d6765222557228a5c591025fc68"
             ],
             "index": "pypi",
-            "version": "==5.0.0"
+            "version": "==5.1.0"
         },
         "pyparsing": {
             "hashes": [
@@ -201,10 +201,10 @@
         },
         "tqdm": {
             "hashes": [
-                "sha256:00339634a22c10a7a22476ee946bbde2dbe48d042ded784e4d88e0236eca5d81",
-                "sha256:ea9e3fd6bd9a37e8783d75bfc4c1faf3c6813da6bd1c3e776488b41ec683af94"
+                "sha256:4733c4a10d0f2a4d098d801464bdaf5240c7dadd2a7fde4ee93b0a0efd9fb25e",
+                "sha256:acdafb20f51637ca3954150d0405ff1a7edde0ff19e38fb99a80a66210d2a28f"
             ],
-            "version": "==4.45.0"
+            "version": "==4.46.0"
         },
         "urllib3": {
             "hashes": [
@@ -229,10 +229,10 @@
         },
         "zeroconf": {
             "hashes": [
-                "sha256:01161f4328d1b3f089008fd0a394524504c87de5a8017ea286c4f1068aea3c09",
-                "sha256:e1e84eb98ce44335190bbb16a237052d07811b1516de69c7983d77162097fdbf"
+                "sha256:51f25787c27cf7b903e6795e8763bccdaa71199f61b75af97f1bde036fa43b27",
+                "sha256:a0cdd43ee8f00e7082f784c4226d2609070ad0b2aeb34b0154466950d2134de6"
             ],
-            "version": "==0.26.0"
+            "version": "==0.26.1"
         },
         "zipp": {
             "hashes": [
@@ -273,10 +273,10 @@
         },
         "ipython": {
             "hashes": [
-                "sha256:ca478e52ae1f88da0102360e57e528b92f3ae4316aabac80a2cd7f7ab2efb48a",
-                "sha256:eb8d075de37f678424527b5ef6ea23f7b80240ca031c2dd6de5879d687a65333"
+                "sha256:5b241b84bbf0eb085d43ae9d46adf38a13b45929ca7774a740990c2c242534bb",
+                "sha256:f0126781d0f959da852fb3089e170ed807388e986a8dd4e6ac44855845b0fb1c"
             ],
-            "version": "==7.13.0"
+            "version": "==7.14.0"
         },
         "ipython-genutils": {
             "hashes": [
