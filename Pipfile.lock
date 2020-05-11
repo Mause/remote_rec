@@ -81,10 +81,10 @@
         },
         "plexapi": {
             "hashes": [
-                "sha256:daf435dc5f6c22447f6a8f92dce5d7da5cfd4511f06f506185faccb2dca28684"
+                "sha256:1d4b89dc9d6d9166177d1664609a591ac9828cc23a7a02481af0ad74e224e876"
             ],
             "index": "pypi",
-            "version": "==3.4.0"
+            "version": "==3.5.0"
         },
         "pluggy": {
             "hashes": [
@@ -199,13 +199,6 @@
             ],
             "version": "==1.14.0"
         },
-        "tqdm": {
-            "hashes": [
-                "sha256:4733c4a10d0f2a4d098d801464bdaf5240c7dadd2a7fde4ee93b0a0efd9fb25e",
-                "sha256:acdafb20f51637ca3954150d0405ff1a7edde0ff19e38fb99a80a66210d2a28f"
-            ],
-            "version": "==4.46.0"
-        },
         "urllib3": {
             "hashes": [
                 "sha256:3018294ebefce6572a474f0604c2021e33b3fd8006ecd11d62107a5d2a963527",
@@ -219,13 +212,6 @@
                 "sha256:ee73862862a156bf77ff92b09034fc4825dd3af9cf81bc5b360668d425f3c5f1"
             ],
             "version": "==0.1.9"
-        },
-        "websocket-client": {
-            "hashes": [
-                "sha256:0fc45c961324d79c781bab301359d5a1b00b13ad1b10415a4780229ef71a5549",
-                "sha256:d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010"
-            ],
-            "version": "==0.57.0"
         },
         "zeroconf": {
             "hashes": [
