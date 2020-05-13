@@ -132,11 +132,11 @@
         },
         "pychromecast": {
             "hashes": [
-                "sha256:16f90297c0b8930a223ac35e7a6188f87301d9e3db64d662be1073ebae533e6b",
-                "sha256:9dadfc91d038e30abc5c909ebdec3e6c6f9d0d6765222557228a5c591025fc68"
+                "sha256:078e78dbf1ca596211c06a67b7d79ae0e3d07edaa57acd647b58a3554a9c504d",
+                "sha256:90bfc191b2aa6de3b6941cb3635ea295a4e5aebced17070550dc953d66115814"
             ],
             "index": "pypi",
-            "version": "==5.1.0"
+            "version": "==5.2.0"
         },
         "pyparsing": {
             "hashes": [
