@@ -60,11 +60,11 @@
         },
         "importlib-metadata": {
             "hashes": [
-                "sha256:90bb658cdbbf6d1735b6341ce708fc7024a3e14e99ffdc5783edea9f9b077f83",
-                "sha256:dc15b2969b4ce36305c51eebe62d418ac7791e9a157911d58bfb1f9ccd8e2070"
+                "sha256:77a540690e24b0305878c37ffd421785a6f7e53c8b5720d211b211de8d0e95da",
+                "sha256:cefa1a2f919b866c5beb7c9f7b0ebb4061f30a8a9bf16d609b000e2dfaceb9c3"
             ],
             "markers": "python_version < '3.8'",
-            "version": "==1.7.0"
+            "version": "==2.0.0"
         },
         "iniconfig": {
             "hashes": [
@@ -140,11 +140,11 @@
         },
         "pychromecast": {
             "hashes": [
-                "sha256:182ee414f7de227f2e55d6444bd59d31282bac4d1d63f0f3ca1f19725c5ba4bf",
-                "sha256:f594231efb34b86eeb463611662bca21a6962793885d3ad68195286940f7473d"
+                "sha256:2f346a88ddc27a19cc68bc2d3e8929d89276298cb1c11871b82a87fbdafb95a8",
+                "sha256:5dba13fa47ee83b08511231bcb35bdec0394a9f1338059e416e28047548795e4"
             ],
             "index": "pypi",
-            "version": "==7.3.0"
+            "version": "==7.5.0"
         },
         "pyparsing": {
             "hashes": [
@@ -230,10 +230,10 @@
         },
         "zipp": {
             "hashes": [
-                "sha256:aa36550ff0c0b7ef7fa639055d797116ee891440eac1a56f378e2d3179e0320b",
-                "sha256:c599e4d75c98f6798c509911d08a22e6c021d074469042177c8c86fb92eefd96"
+                "sha256:43f4fa8d8bb313e65d8323a3952ef8756bf40f9a5c3ea7334be23ee4ec8278b6",
+                "sha256:b52f22895f4cfce194bc8172f3819ee8de7540aa6d873535a8668b730b8b411f"
             ],
-            "version": "==3.1.0"
+            "version": "==3.2.0"
         }
     },
     "develop": {
@@ -358,9 +358,9 @@
         },
         "urwid": {
             "hashes": [
-                "sha256:7870866e35b00b71b0c9ccdd1281c8e7fac3806d60b9c1075c95dd5dad88d526"
+                "sha256:588bee9c1cb208d0906a9f73c613d2bd32c3ed3702012f51efe318a3f2127eae"
             ],
-            "version": "==2.1.1"
+            "version": "==2.1.2"
         },
         "wcwidth": {
             "hashes": [
