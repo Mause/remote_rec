@@ -333,10 +333,10 @@
         },
         "pudb": {
             "hashes": [
-                "sha256:e8f0ea01b134d802872184b05bffc82af29a1eb2f9374a277434b932d68f58dc"
+                "sha256:2ef23d3371439f13fffbe7f8b9fc180a19d4183dc9cab204d878d7c7766464bf"
             ],
             "index": "pypi",
-            "version": "==2019.2"
+            "version": "==2020.1"
         },
         "pygments": {
             "hashes": [
