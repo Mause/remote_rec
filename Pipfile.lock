@@ -133,11 +133,11 @@
         },
         "pychromecast": {
             "hashes": [
-                "sha256:17b392fd9952cc0017540fe546e00f503fad1933ace1f6c9933d9df90204bb52",
-                "sha256:2d25eed77aea0060e5cf77c8aad71656c930fd225883b67959e88909ecc2821e"
+                "sha256:19d87748e7e1d23caa0205f06d4feab9ab5a2415b7adbf16cf06e52b9641ce11",
+                "sha256:d6fd0382395303b3260ea7a89a850c8c9e5c83e7ce71a5fbd793bb157cf8ad26"
             ],
             "index": "pypi",
-            "version": "==7.7.0"
+            "version": "==7.7.1"
         },
         "pyparsing": {
             "hashes": [
