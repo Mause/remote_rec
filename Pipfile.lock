@@ -133,11 +133,11 @@
         },
         "pychromecast": {
             "hashes": [
-                "sha256:19d87748e7e1d23caa0205f06d4feab9ab5a2415b7adbf16cf06e52b9641ce11",
-                "sha256:d6fd0382395303b3260ea7a89a850c8c9e5c83e7ce71a5fbd793bb157cf8ad26"
+                "sha256:a7409875714a5c68684308a00ed71e245473cae73bdf0da3457a9b8ebac6e772",
+                "sha256:df0295f653cee752de38cf8ef09f13ad9782c53924dfbaa191ca62bd5e1dce14"
             ],
             "index": "pypi",
-            "version": "==7.7.1"
+            "version": "==8.1.0"
         },
         "pyparsing": {
             "hashes": [
@@ -319,10 +319,9 @@
         },
         "prompt-toolkit": {
             "hashes": [
-                "sha256:7e966747c18ececaec785699626b771c1ba8344c8d31759a1915d6b12fad6525",
-                "sha256:c96b30925025a7635471dc083ffb6af0cc67482a00611bd81aeaeeeb7e5a5e12"
+                "sha256:4ccd91f540ef57732d38451889b915ab75a78e04f427e9f2811ff9da0332a174"
             ],
-            "version": "==3.0.14"
+            "version": "==3.0.15"
         },
         "ptyprocess": {
             "hashes": [
