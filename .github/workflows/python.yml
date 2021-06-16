@@ -13,10 +13,12 @@ jobs:
       with:
         python-version: 3.9
         
-    - name: Pipenv for Github Actions
+    - name: sync
       uses: VaultVulp/action-pipenv@v2.0.1
       with:
         command: sync
 
-    - name: Run mypy
-      run: pipenv run mypy .
+    - name: typecheck
+      uses: VaultVulp/action-pipenv@v2.0.1
+      with:
+        command: run mypy .
