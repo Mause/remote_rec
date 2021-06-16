@@ -18,6 +18,11 @@ jobs:
       with:
         command: sync
 
+    - name: install mypy
+      uses: VaultVulp/action-pipenv@v2.0.1
+      with:
+        command: install mypy
+
     - name: typecheck
       uses: VaultVulp/action-pipenv@v2.0.1
       with:
