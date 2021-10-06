@@ -1,10 +1,10 @@
-import os
 import logging
-from pprint import pprint
-from typing import Optional, Dict
+import os
 from datetime import datetime
 from functools import lru_cache
-from urllib.parse import urlencode, parse_qsl
+from pprint import pprint
+from typing import Dict, Optional
+from urllib.parse import parse_qsl
 
 import requests
 from pychromecast import Chromecast
@@ -18,7 +18,7 @@ ANIMELAB_APP_ID = "53C25447"
 session = BaseUrlSession("https://api.animelab.com/api/")
 
 
-@lru_cache()
+@lru_cache
 def get_controller(tv):
     mc = AnimelabController()
 
@@ -33,7 +33,7 @@ class AnimelabController(MediaController):
         self.app_id = ANIMELAB_APP_ID
 
 
-def autocomplete(text: str) -> Optional[Dict]:
+def autocomplete(text: str) -> Optional[dict]:
     result = session.get("shows/search", params={"searchTerms": text}).json()[
         "list"
     ]
@@ -124,4 +124,3 @@ def get_video_for_show(show_id: str) -> str:
 
 if __name__ == "__main__":
     pprint(get_video_for_show('479'))
-
