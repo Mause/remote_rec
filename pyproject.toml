@@ -1,3 +1,26 @@
+[tool.poetry]
+name = "plugins"
+version = "0.0.0"
+
+[tool.poetry.dependencies]
+python = "==3.9"
+pychromecast = "*"
+requests-toolbelt = "*"
+python-dotenv = "*"
+redis = "*"
+requests = "*"
+pytest = "*"
+plexapi = "*"
+python-levenshtein = "*"
+pluginbase = "*"
+
+[tool.poetry.dev-dependencies]
+ipdb = "*"
+types-requests = "*"
+pdbpp = "*"
+pudb = "*"
+
+
 [tool.isort]
 profile = "black"
 
