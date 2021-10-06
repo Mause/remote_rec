@@ -42,4 +42,6 @@ repos:
       - id: mypy
         additional_dependencies:
           - "mause-rpc==0.0.19"
+          - "types-redis==3.5.9"
+          - "types-Werkzeug==1.0.5"
           - "types-requests==2.25.9"
