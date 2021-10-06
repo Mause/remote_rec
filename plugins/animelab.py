@@ -1,10 +1,10 @@
-import os
 import logging
-from pprint import pprint
-from typing import Optional, Dict
+import os
 from datetime import datetime
 from functools import lru_cache
-from urllib.parse import urlencode, parse_qsl
+from pprint import pprint
+from typing import Dict, Optional
+from urllib.parse import parse_qsl
 
 import requests
 from pychromecast import Chromecast
@@ -34,9 +34,7 @@ class AnimelabController(MediaController):
 
 
 def autocomplete(text: str) -> Optional[Dict]:
-    result = session.get("shows/search", params={"searchTerms": text}).json()[
-        "list"
-    ]
+    result = session.get("shows/search", params={"searchTerms": text}).json()["list"]
 
     return result[0] if result else None
 
@@ -44,9 +42,7 @@ def autocomplete(text: str) -> Optional[Dict]:
 def play_show(tv: Chromecast, text: str):
     show = autocomplete(text)
     if not show:
-        logging.info(
-            f'could not find a show that matched "{text}" for animelab'
-        )
+        logging.info(f'could not find a show that matched "{text}" for animelab')
         return
 
     logging.info(f"playing from {show['name']}")
@@ -91,9 +87,7 @@ def get_session():
 
 def get_video_for_show(show_id: str) -> str:
     first_unwatched = (
-        get_session()
-        .get(f"shows/firstunwatched/{show_id}")
-        .json()["videoList"]
+        get_session().get(f"shows/firstunwatched/{show_id}").json()["videoList"]
     )
 
     logging.info(
@@ -124,4 +118,3 @@ def get_video_for_show(show_id: str) -> str:
 
 if __name__ == "__main__":
     pprint(get_video_for_show('479'))
-

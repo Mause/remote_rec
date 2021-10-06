@@ -1,16 +1,15 @@
-import os
 import json
 import logging
-from uuid import UUID
-from typing import Optional, Callable
+import os
 from functools import lru_cache
+from uuid import UUID
 
+import pychromecast
 import requests
 from dotenv import load_dotenv
-from redis import StrictRedis
-import pychromecast
-from pychromecast import Chromecast
 from pluginbase import PluginBase
+from pychromecast import Chromecast
+from redis import StrictRedis
 
 logging.basicConfig(level=logging.INFO)
 
@@ -38,9 +37,7 @@ def get_tv(*, uuid: str = None, name: str = None) -> Chromecast:
         None,
     )
     if not tv:
-        message = (
-            f'did not find tv with criteria: name="{name}" or uuid="{uuid}"'
-        )
+        message = f'did not find tv with criteria: name="{name}" or uuid="{uuid}"'
         logging.error(message)
         raise Exception(message)
 
@@ -84,4 +81,3 @@ if __name__ == "__main__":
     except FileNotFoundError:
         pass
     main()
-

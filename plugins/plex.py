@@ -1,16 +1,15 @@
-import os
-import json
 import logging
+import os
 from functools import lru_cache
-from typing import Optional, Any
+from typing import Optional
 from urllib.parse import urlparse
 
+from plexapi.exceptions import NotFound
+from plexapi.myplex import MyPlexAccount
+from plexapi.server import PlexServer
+from plexapi.video import Movie
 from pychromecast import Chromecast
 from pychromecast.controllers.media import MediaController
-from plexapi.server import PlexServer
-from plexapi.myplex import MyPlexAccount
-from plexapi.exceptions import NotFound
-from plexapi.video import Movie
 
 USERNAME = os.environ['PLEX_USERNAME']
 PASSWORD = os.environ['PLEX_PASSWORD']
@@ -128,4 +127,3 @@ if __name__ == "__main__":
 
     get_plex()
     play_show(get_tv(), input('query> '))
-
