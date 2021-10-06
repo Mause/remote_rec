@@ -34,9 +34,7 @@ class AnimelabController(MediaController):
 
 
 def autocomplete(text: str) -> Optional[dict]:
-    result = session.get("shows/search", params={"searchTerms": text}).json()[
-        "list"
-    ]
+    result = session.get("shows/search", params={"searchTerms": text}).json()["list"]
 
     return result[0] if result else None
 
