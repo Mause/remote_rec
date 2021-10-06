@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from functools import lru_cache
 from pprint import pprint
-from typing import Dict, Optional
+from typing import Optional
 from urllib.parse import parse_qsl
 
 import requests
