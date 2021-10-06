@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from functools import lru_cache
 from pprint import pprint
-from typing import Dict, Optional
+from typing import Optional
 from urllib.parse import parse_qsl
 
 import requests
@@ -18,7 +18,7 @@ ANIMELAB_APP_ID = "53C25447"
 session = BaseUrlSession("https://api.animelab.com/api/")
 
 
-@lru_cache()
+@lru_cache
 def get_controller(tv):
     mc = AnimelabController()
 
@@ -33,8 +33,10 @@ class AnimelabController(MediaController):
         self.app_id = ANIMELAB_APP_ID
 
 
-def autocomplete(text: str) -> Optional[Dict]:
-    result = session.get("shows/search", params={"searchTerms": text}).json()["list"]
+def autocomplete(text: str) -> Optional[dict]:
+    result = session.get("shows/search", params={"searchTerms": text}).json()[
+        "list"
+    ]
 
     return result[0] if result else None
 

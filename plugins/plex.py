@@ -16,7 +16,7 @@ PASSWORD = os.environ['PLEX_PASSWORD']
 APP_ID = "9AC194DC"
 
 
-@lru_cache()
+@lru_cache
 def get_plex():
     logging.info("connecting to plex")
     plex = MyPlexAccount(USERNAME, PASSWORD).resource("Novell").connect()
@@ -100,7 +100,7 @@ def autocomplete(text: str) -> Optional[Movie]:
     return results[0] if results else None
 
 
-@lru_cache()
+@lru_cache
 def get_controller(tv: Chromecast) -> PlexMediaController:
     mc = PlexMediaController(get_plex())
 

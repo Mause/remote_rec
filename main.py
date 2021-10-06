@@ -18,7 +18,7 @@ load_dotenv()
 plugin_source = PluginBase('plugins').make_plugin_source(searchpath=['plugins'])
 
 
-@lru_cache()
+@lru_cache
 def get_tv(*, uuid: str = None, name: str = None) -> Chromecast:
     assert uuid or name, "Must specify either name or uuid"
     logging.info("finding tv")
