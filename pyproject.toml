@@ -1,6 +1,9 @@
 [tool.poetry]
-name = "plugins"
+name = "remote_rec"
 version = "0.0.0"
+description = ""
+authors = ["Elliana <me@mause.me>"]
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "==3.9"
