@@ -33,3 +33,16 @@ repos:
     hooks:
       - id: pyupgrade
         args: [--py39-plus]
+  - repo: https://github.com/psf/black
+    rev: 21.9b0
+    hooks:
+      - id: black
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: 'v0.910'  # Use the sha / tag you want to point at
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - "mause-rpc==0.0.19"
+          - "types-redis==3.5.9"
+          - "types-Werkzeug==1.0.5"
+          - "types-requests==2.25.9"

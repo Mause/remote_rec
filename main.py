@@ -37,9 +37,7 @@ def get_tv(*, uuid: str = None, name: str = None) -> Chromecast:
         None,
     )
     if not tv:
-        message = (
-            f'did not find tv with criteria: name="{name}" or uuid="{uuid}"'
-        )
+        message = f'did not find tv with criteria: name="{name}" or uuid="{uuid}"'
         logging.error(message)
         raise Exception(message)
 
